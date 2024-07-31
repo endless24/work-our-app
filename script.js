@@ -179,7 +179,7 @@ class App {
     this._renderWorkoutMarker(workout);
 
     // Render workout on list
-    this_renderWorkout(workout);
+    this._renderWorkout(workout);
 
     // Hide form + clear input feilds
     inputDistance.value =
@@ -252,9 +252,8 @@ class App {
         </div>
         </li>
       `;
-
-      form.insertAdjacentHTML("afterend", html);
     }
+    form.insertAdjacentHTML("afterend", html);
   }
 }
 const app = new App();
